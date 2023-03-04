@@ -1,0 +1,17 @@
+{
+    "name": "user/digital-cep",
+    "description": "Busca de cep online",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "User\\DigitalCep\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VanessaVPG",
+            "email": "vanessa.pg026@gmail.com"
+        }
+    ],
+    "require": {}
+}
