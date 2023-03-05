@@ -3,5 +3,5 @@
     use User\DigitalCep\Search;
     $busca = new Search;
     $resultado = $busca -> getAddressFromZipCode('88136000');
-    print_r($resultado);
+    print_r("Endereço: " . $resultado);
 ?>
