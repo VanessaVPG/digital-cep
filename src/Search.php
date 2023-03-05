@@ -1,5 +1,5 @@
 <?php
-namespace User\DigitalCep;
+namespace VanessaVPG\DigitalCep;
 class Search 
 {
     private $url = "https://viacep.com.br/ws/";
