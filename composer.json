@@ -1,5 +1,5 @@
 {
-    "name": "user/digital-cep",
+    "name": "vanessavpg/digital-cep",
     "description": "Busca de cep online",
     "type": "library",
     "autoload": {
