@@ -3,5 +3,5 @@
     use VanessaVPG\DigitalCep\Search;
     $busca = new Search;
     $resultado = $busca -> getAddressFromZipCode('88136000');
-    print_r("Endereço: " . $resultado);
+    print_r($resultado);
 ?>
