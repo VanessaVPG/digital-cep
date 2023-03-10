@@ -1,6 +1,8 @@
 <?php
+
 use PHPUnit\Framework\TestCase;
 use VanessaVPG\DigitalCep\Search;
+
 class SearchTest extends TestCase
 {
     /**
@@ -8,7 +10,7 @@ class SearchTest extends TestCase
      */
     public function testGetAddressFromZipCodeDefaultUsage(string $input, array $esperado)
     {
-        $resultado = new Search;
+        $resultado = new Search();
         $resultado = $resultado->getAddressFromZipCode($input);
         $this->assertEquals($esperado, $resultado);
     }
@@ -16,7 +18,7 @@ class SearchTest extends TestCase
     public function dadosTeste()
     {
         return [
-                "Endereço São Sebastião"=>[
+                "Endereço São Sebastião" => [
                 "88136000",
                     [
                     "cep" => "88136-000",
@@ -26,30 +28,27 @@ class SearchTest extends TestCase
                     "localidade" => "Palhoça",
                     "uf" => "SC",
                     "ibge" => "4211900",
-                    "gia" =>"",
+                    "gia" => "",
                     "ddd" => "48",
-                    "siafi" =>"8233",
+                    "siafi" => "8233",
                     ]
                 ],
-                "Endereço qualquer"=> [
+                "Endereço qualquer" => [
                     "01001000",
                     [
                         "cep" => "01001-000",
-                        "logradouro"=>"Praça da Sé",
-                        "complemento"=> "lado ímpar",
-                        "bairro"=> "Sé",
-                        "localidade"=> "São Paulo",
-                        "uf"=>"SP",
-                        "ibge"=> "3550308",
-                        "gia"=> "1004",
-                        "ddd"=> "11",
-                        "siafi"=> "7107"
+                        "logradouro" => "Praça da Sé",
+                        "complemento" => "lado ímpar",
+                        "bairro" => "Sé",
+                        "localidade" => "São Paulo",
+                        "uf" => "SP",
+                        "ibge" => "3550308",
+                        "gia" => "1004",
+                        "ddd" => "11",
+                        "siafi" => "7107"
                     ]
                 ]
 
         ];
-                    
     }
 }
-
-?>
